@@ -19,6 +19,8 @@ class PostTag extends Model
      */
     protected $guarded = ['*'];
 
+    public $timestamps = false;
+
     /**
      * @var array Fillable fields
      */
