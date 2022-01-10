@@ -54,20 +54,19 @@ return [
         ],
 
         'mysql' => [
-            'driver'         => 'mysql',
-            // 'url'         => env('DATABASE_URL'),
+            'driver'         => env('DB_CONNECTION'),
             'engine'         => 'InnoDB',
-            'host'           => '127.0.0.1',
+            'host'           => env('DB_HOST'),
             'port'           => 3306,
-            'database'       => 'database',
-            'username'       => 'root',
-            'password'       => '',
+            'database'       => env('DB_DATABASE'),
+            'username'       => env('DB_USERNAME'),
+            'password'       => env('DB_PASSWORD'),
             'charset'        => 'utf8mb4',
             'collation'      => 'utf8mb4_unicode_ci',
             'prefix'         => '',
             'prefix_indexes' => true,
             'strict'         => true,
-            'varcharmax'     => 191,
+            'varcharmax'     => 255
         ],
 
         'pgsql' => [
