@@ -3,6 +3,12 @@
 # ===================================
 
 fields:
-    id:
-        label: ID
-        disabled: true
+    name:
+        label: Название
+        required: true
+    slug:
+        label: URL
+        preset:
+            field: name
+            type: slug
+        required: true

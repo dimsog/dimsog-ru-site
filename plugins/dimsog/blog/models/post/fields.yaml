@@ -3,6 +3,26 @@
 # ===================================
 
 fields:
-    id:
-        label: ID
-        disabled: true
+    name:
+        label: Название
+        required: true
+        span: auto
+    slug:
+        label: URL
+        preset:
+            field: name
+            type: slug
+        required: true
+        span: auto
+tabs:
+    fields:
+        small_text:
+            tab: Основное
+            label: Короткое описание
+            type: textarea
+            size: medium
+        text:
+            tab: Основное
+            label: Текст
+            type: richeditor
+            size: giant

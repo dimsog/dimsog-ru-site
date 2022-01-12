@@ -61,7 +61,9 @@ class Category extends Model
      * @var array Relations
      */
     public $hasOne = [];
-    public $hasMany = [];
+    public $hasMany = [
+        'posts' => [Post::class]
+    ];
     public $hasOneThrough = [];
     public $hasManyThrough = [];
     public $belongsTo = [];

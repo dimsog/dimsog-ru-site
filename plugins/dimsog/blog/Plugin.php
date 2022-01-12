@@ -81,15 +81,43 @@ class Plugin extends PluginBase
      */
     public function registerNavigation()
     {
-        return []; // Remove this line to activate
-
         return [
             'blog' => [
-                'label'       => 'Blog',
-                'url'         => Backend::url('dimsog/blog/mycontroller'),
-                'icon'        => 'icon-leaf',
-                'permissions' => ['dimsog.blog.*'],
+                'label'       => 'Блог',
+                'url'         => Backend::url('dimsog/blog/posts'),
+                'icon'        => 'icon-file-text-o',
+                'permissions' => ['*'],
                 'order'       => 500,
+                'sideMenu' => [
+                    'categories' => [
+                        'label'       => 'Категории',
+                        'url'         => Backend::url('dimsog/blog/categories'),
+                        'icon'        => 'icon-list-ul',
+                        'permissions' => ['*'],
+                        'order'       => 500
+                    ],
+                    'posts' => [
+                        'label'       => 'Блог',
+                        'url'         => Backend::url('dimsog/blog/posts'),
+                        'icon'        => 'icon-file-text-o',
+                        'permissions' => ['*'],
+                        'order'       => 500
+                    ],
+                    'tags' => [
+                        'label'       => 'Теги',
+                        'url'         => Backend::url('dimsog/blog/tags'),
+                        'icon'        => 'icon-link',
+                        'permissions' => ['*'],
+                        'order'       => 500
+                    ],
+                    'posttypes' => [
+                        'label'       => 'Типы постов',
+                        'url'         => Backend::url('dimsog/blog/posttypes'),
+                        'icon'        => 'icon-list-ul',
+                        'permissions' => ['*'],
+                        'order'       => 500
+                    ]
+                ]
             ],
         ];
     }
