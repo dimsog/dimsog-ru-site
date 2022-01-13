@@ -17,20 +17,10 @@ description = "Default layout"
     </head>
     <body>
 
-        <!-- Header -->
-        <header id="layout-header">
-            {% partial 'site/header' %}
-        </header>
-
         <!-- Content -->
         <section id="layout-content">
             {% page %}
         </section>
-
-        <!-- Footer -->
-        <footer id="layout-footer">
-            {% partial 'site/footer' %}
-        </footer>
 
         <!-- Scripts -->
         <script src="{{ 'assets/vendor/jquery.js'|theme }}"></script>
