@@ -24,7 +24,7 @@ class PostsList extends ComponentBase
     public function onRun()
     {
         $reader = new PostsReader();
-        $this->category = Category::findBySlug($this->property('slug'));
+        $this->category = Category::findBySlug($this->property('categorySlug'));
         $reader->setCategoryId((int) $this->category?->id);
         $this->posts = $reader->read();
     }
@@ -38,7 +38,7 @@ class PostsList extends ComponentBase
     public function defineProperties(): array
     {
         return [
-            'slug' => [
+            'categorySlug' => [
                 'title' => 'URL категории',
                 'description' => 'Укажите категорию, из которой брать записи',
                 'default' => null,
