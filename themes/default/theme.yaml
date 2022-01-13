@@ -3,3 +3,8 @@ description: 'Demo Winter CMS theme. Demonstrates the basic concepts of the fron
 author: Winter CMS
 homepage: 'http://wintercms.com'
 code: ''
+form:
+    fields:
+        site_name:
+            label: Название сайта
+            default: site.ru

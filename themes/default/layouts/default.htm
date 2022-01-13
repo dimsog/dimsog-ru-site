@@ -12,13 +12,25 @@ description = "Default layout"
         <meta name="author" content="Winter CMS">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="generator" content="Winter CMS">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
         <link rel="icon" type="image/png" href="{{ 'assets/images/winter.png'|theme }}">
         <link href="{{ 'assets/frontend/dist/app.css' | theme }}" rel="stylesheet">
         {% styles %}
     </head>
     <body>
-        <header>
-            {% component 'categoriesList' %}
+        <header class="header">
+            <div class="header__logo">
+                <a href="/" class="header-logo-link">
+                    {{ this.theme.site_name }}
+                </a>
+            </div>
+            <div class="header__categories">
+                {% component 'categoriesList' %}
+            </div>
         </header>
 
         <!-- Content -->

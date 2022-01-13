@@ -1,0 +1,17 @@
+.header {
+    text-align: center;
+    padding-top: 2rem;
+    .header__logo {
+        .header-logo-link {
+            font-size: 2rem;
+            color: #000;
+            text-decoration: none;
+        }
+    }
+    .categories {
+        .category-item {
+            display: inline-block;
+            padding: 10px;
+        }
+    }
+}
