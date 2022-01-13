@@ -1,4 +1,6 @@
 description = "Default layout"
+
+[categoriesList]
 ==
 <!DOCTYPE html>
 <html>
@@ -16,6 +18,9 @@ description = "Default layout"
         {% styles %}
     </head>
     <body>
+        <header>
+            {% component 'categoriesList' %}
+        </header>
 
         <!-- Content -->
         <section id="layout-content">

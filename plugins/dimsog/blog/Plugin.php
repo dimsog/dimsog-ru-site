@@ -1,6 +1,7 @@
 <?php namespace Dimsog\Blog;
 
 use Backend;
+use Dimsog\Blog\Components\CategoriesList;
 use System\Classes\PluginBase;
 
 /**
@@ -43,17 +44,10 @@ class Plugin extends PluginBase
 
     }
 
-    /**
-     * Registers any front-end components implemented in this plugin.
-     *
-     * @return array
-     */
-    public function registerComponents()
+    public function registerComponents(): array
     {
-        return []; // Remove this line to activate
-
         return [
-            'Dimsog\Blog\Components\MyComponent' => 'myComponent',
+            CategoriesList::class => 'categoriesList'
         ];
     }
 
