@@ -1,6 +1,7 @@
 <?php namespace Dimsog\Blog\Models;
 
 use Model;
+use System\Models\File;
 
 /**
  * Post Model
@@ -61,7 +62,9 @@ class Post extends Model
      * @var array Relations
      */
     public $hasOne = [];
-    public $hasMany = [];
+    public $hasMany = [
+        'tags' => [PostTag::class]
+    ];
     public $hasOneThrough = [];
     public $hasManyThrough = [];
     public $belongsTo = [];
@@ -69,6 +72,19 @@ class Post extends Model
     public $morphTo = [];
     public $morphOne = [];
     public $morphMany = [];
-    public $attachOne = [];
+    public $attachOne = [
+        'image' => [File::class, 'delete' => true]
+    ];
     public $attachMany = [];
+
+
+    public function getCategoryIdOptions(): array
+    {
+        return Category::lists('name', 'id');
+    }
+
+    public function getTypeIdOptions(): array
+    {
+        return PostType::lists('name', 'id');
+    }
 }

@@ -13,7 +13,8 @@ class Posts extends Controller
      */
     public $implement = [
         'Backend.Behaviors.FormController',
-        'Backend.Behaviors.ListController'
+        'Backend.Behaviors.ListController',
+        'Backend.Behaviors.RelationController'
     ];
 
     /**
@@ -25,6 +26,9 @@ class Posts extends Controller
      * @var string Configuration file for the `ListController` behavior.
      */
     public $listConfig = 'config_list.yaml';
+
+    public $relationConfig = 'config_relation.yaml';
+
 
     public function __construct()
     {

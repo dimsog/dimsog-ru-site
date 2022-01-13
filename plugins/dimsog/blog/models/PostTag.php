@@ -66,11 +66,19 @@ class PostTag extends Model
     public $hasMany = [];
     public $hasOneThrough = [];
     public $hasManyThrough = [];
-    public $belongsTo = [];
+    public $belongsTo = [
+        'tag' => [Tag::class]
+    ];
     public $belongsToMany = [];
     public $morphTo = [];
     public $morphOne = [];
     public $morphMany = [];
     public $attachOne = [];
     public $attachMany = [];
+
+
+    public function getTagIdOptions(): array
+    {
+        return Tag::lists('name', 'id');
+    }
 }

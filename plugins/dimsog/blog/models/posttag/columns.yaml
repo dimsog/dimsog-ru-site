@@ -3,6 +3,8 @@
 # ===================================
 
 columns:
-    id:
-        label: ID
-        searchable: true
+    tag_id:
+        label: Теги
+        relation: tag
+        select: name
+        width: '250px'
