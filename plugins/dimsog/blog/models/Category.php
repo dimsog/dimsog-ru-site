@@ -73,4 +73,15 @@ class Category extends Model
     public $morphMany = [];
     public $attachOne = [];
     public $attachMany = [];
+
+
+    public static function findBySlug(?string $slug): ?static
+    {
+        if (empty($slug)) {
+            return null;
+        }
+        return static::where('slug', $slug)
+            ->where('active', 1)
+            ->first();
+    }
 }

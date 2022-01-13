@@ -2,6 +2,7 @@
 
 use Backend;
 use Dimsog\Blog\Components\CategoriesList;
+use Dimsog\Blog\Components\PostsList;
 use System\Classes\PluginBase;
 
 /**
@@ -47,7 +48,8 @@ class Plugin extends PluginBase
     public function registerComponents(): array
     {
         return [
-            CategoriesList::class => 'categoriesList'
+            CategoriesList::class => 'categoriesList',
+            PostsList::class => 'postsList'
         ];
     }
 

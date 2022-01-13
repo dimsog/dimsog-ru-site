@@ -1,5 +1,6 @@
 <?php namespace Dimsog\Blog\Models;
 
+use Illuminate\Database\Eloquent\Collection;
 use Model;
 use System\Models\File;
 
