@@ -1,0 +1,30 @@
+{
+  "name": "ThemeApp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode=production"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fancyapps/fancybox": "^3.5.7",
+    "@popperjs/core": "^2.10.1",
+    "bootstrap": "^5.1.0",
+    "cross-env": "^7.0.3",
+    "jquery": "^3.6.0",
+    "mini-css-extract-plugin": "^2.3.0",
+    "node-sass": "^6.0.1",
+    "sass": "^1.43.4",
+    "sass-loader": "^12.3.0",
+    "webpack": "^5.64.2"
+  },
+  "devDependencies": {
+    "css-loader": "^6.2.0",
+    "resolve-url-loader": "^4.0.0",
+    "style-loader": "^3.2.1",
+    "webpack-cli": "^4.8.0"
+  }
+}

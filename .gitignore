@@ -2,6 +2,7 @@
 /vendor
 composer.phar
 composer.lock
+node_modules
 
 # Framework ignores
 .env
