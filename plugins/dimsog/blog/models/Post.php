@@ -88,4 +88,12 @@ class Post extends Model
     {
         return PostType::lists('name', 'id');
     }
+
+
+    public static function findActiveBySlug(string $slug): ?static
+    {
+        return static::where('slug', $slug)
+            ->where('active', 1)
+            ->first();
+    }
 }

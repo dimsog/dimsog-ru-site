@@ -3,6 +3,7 @@
 use Backend;
 use Dimsog\Blog\Components\CategoriesList;
 use Dimsog\Blog\Components\PostsList;
+use Dimsog\Blog\Components\PostView;
 use System\Classes\PluginBase;
 
 /**
@@ -49,7 +50,8 @@ class Plugin extends PluginBase
     {
         return [
             CategoriesList::class => 'categoriesList',
-            PostsList::class => 'postsList'
+            PostsList::class => 'postsList',
+            PostView::class => 'postView'
         ];
     }
 

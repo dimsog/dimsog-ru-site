@@ -1,5 +1,7 @@
 {% for post in items %}
 <div class="post-item">
-    {{ post.name }}
+    <a href="{{ 'post-view' | page({ slug: post.slug }) }}">
+        {{ post.name }}
+    </a>
 </div>
 {% endfor %}
