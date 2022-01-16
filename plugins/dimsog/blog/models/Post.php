@@ -68,7 +68,9 @@ class Post extends Model
     ];
     public $hasOneThrough = [];
     public $hasManyThrough = [];
-    public $belongsTo = [];
+    public $belongsTo = [
+        'category' => Category::class
+    ];
     public $belongsToMany = [];
     public $morphTo = [];
     public $morphOne = [];

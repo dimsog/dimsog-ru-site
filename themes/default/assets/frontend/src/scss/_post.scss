@@ -1,0 +1,33 @@
+.post-item {
+    background: #FFF;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    box-sizing: border-box;
+
+    &--status {
+        font-size: 2rem;
+        padding: 15px;
+    }
+
+    .post-item__header {
+        padding: 15px;
+        a {
+            text-decoration: none;
+            color: #000;
+            &:hover {
+                color: #3386d3;
+            }
+        }
+
+        .post-summary {
+            display: flex;
+            .post-summary__item {
+                padding-right: 15px;
+            }
+        }
+    }
+
+    .post-item__text {
+        padding: 15px;
+    }
+}

@@ -1,7 +1,35 @@
 {% for post in items %}
-<div class="post-item">
-    <a href="{{ 'post-view' | page({ slug: post.slug }) }}">
-        {{ post.name }}
-    </a>
-</div>
+<article class="post-item {% if post.type_id == 1 %} post-item--full {% else %} post-item--status {% endif %}">
+    {% if post.type_id == 1 %}
+        <header class="post-item__header">
+            <h2>
+                <a href="{{ 'post-view' | page({ slug: post.slug }) }}" class="post-item__link">
+                    {{ post.name }}
+                </a>
+            </h2>
+            <div class="post-summary">
+                <div class="post-summary__item">
+                    <a href="{{ 'category-view' | page({ slug: post.category.slug }) }}">
+                        {{ post.category.name }}
+                    </a>
+                </div>
+                <div class="post-summary__item">
+                    <i class="far fa-calendar-alt"></i> {{ post.created_at | date('d.m.Y') }}
+                </div>
+            </div>
+        </header>
+        {% if post.image is not empty %}
+        <section class="post-item__image">
+            <a href="{{ 'post-view' | page({ slug: post.slug }) }}">
+                <img src="{{ post.image.getThumb(700, 400, { 'mode': 'crop' }) }}" class="img-fluid" alt="{{ post.image.name }}" loading="lazy">
+            </a>
+        </section>
+        {% endif %}
+        <section class="post-item__text">
+            {{ post.small_text }}
+        </section>
+    {% else %}
+        Если вы не хотите читать этот текст, просто идите нафиг короче да и все, это же так просто
+    {% endif %}
+</article>
 {% endfor %}
