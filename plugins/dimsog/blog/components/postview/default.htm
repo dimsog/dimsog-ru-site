@@ -1,4 +1,3 @@
-{% for post in items %}
 <article class="post-item">
     <header class="post-item__header">
         <h1>
@@ -21,13 +20,6 @@
     </section>
     {% endif %}
     <section class="post-item__text">
-        {{ post.small_text }}
+        {{ post.text | raw }}
     </section>
-    {% else %}
-    Если вы не хотите читать этот текст, просто идите нафиг короче да и все, это же так просто
-    {% endif %}
 </article>
-{% endfor %}
-
-
-{{ post.text | raw }}
