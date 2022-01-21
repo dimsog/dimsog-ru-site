@@ -27,6 +27,8 @@ class PostsList extends ComponentBase
         $this->category = Category::findBySlug($this->property('categorySlug'));
         $reader->setCategoryId((int) $this->category?->id);
         $this->posts = $reader->read();
+
+        $this->page['activeCategory'] = $this->category;
     }
 
     public function onRender(): void

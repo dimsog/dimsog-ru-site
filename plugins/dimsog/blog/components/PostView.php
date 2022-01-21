@@ -11,6 +11,7 @@ class PostView extends ComponentBase
     public function onRun()
     {
         $this->post = Post::findActiveBySlug($this->property('slug'));
+        $this->page['activeCategory'] = $this->post->category;
     }
 
     public function onRender(): void

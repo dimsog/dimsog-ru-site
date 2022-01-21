@@ -18,9 +18,15 @@
             text-transform: uppercase;
             font-size: 0.9rem;
             transition: 0.3s;
+            border-radius: 5px;
             &:hover {
                 background: #e0e8ec;
-                border-radius: 5px;
+            }
+            &--active {
+                background: #bfebcd;
+                &:hover {
+                    background: #bfebcd;
+                }
             }
         }
     }

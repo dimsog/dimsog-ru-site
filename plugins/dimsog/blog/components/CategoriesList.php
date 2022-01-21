@@ -29,9 +29,4 @@ class CategoriesList extends ComponentBase
     {
         $this->page['items'] = $this->categories;
     }
-
-    public function defineProperties(): array
-    {
-        return [];
-    }
 }
