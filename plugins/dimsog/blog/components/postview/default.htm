@@ -12,6 +12,10 @@
             <div class="post-summary__item">
                 <i class="far fa-calendar-alt"></i> {{ post.created_at | date('d.m.Y') }}
             </div>
+            <div class="post-summary__item">
+                <i class="fas fa-comment"></i> <span id="comments-count">{{ comments.countActiveCommentsFromCurrentPage() }}</span>
+            </span>
+            </div>
         </div>
     </header>
     {% if post.image is not empty %}
