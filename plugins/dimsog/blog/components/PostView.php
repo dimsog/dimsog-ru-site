@@ -11,6 +11,9 @@ class PostView extends ComponentBase
     public function onRun()
     {
         $this->post = Post::findActiveBySlug($this->property('slug'));
+        if ($this->post == null) {
+            return $this->controller->run('404');
+        }
         $this->page['activeCategory'] = $this->post->category;
     }
 

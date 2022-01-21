@@ -24,7 +24,11 @@ class PostsList extends ComponentBase
     public function onRun()
     {
         $reader = new PostsReader();
-        $this->category = Category::findBySlug($this->property('categorySlug'));
+        $slug = $this->property('categorySlug');
+        $this->category = Category::findBySlug($slug);
+        if (empty($slug) == false && $this->category == null) {
+            return $this->controller->run('404');
+        }
         $reader->setCategoryId((int) $this->category?->id);
         $this->posts = $reader->read();
 
