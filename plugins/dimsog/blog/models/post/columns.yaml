@@ -6,3 +6,12 @@ columns:
     id:
         label: ID
         searchable: true
+        width: '100px'
+    category_id:
+        label: Категория
+        relation: category
+        select: name
+        width: '250px'
+    name:
+        label: Название
+        searchable: true
