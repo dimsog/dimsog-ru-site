@@ -31,6 +31,8 @@ class PostsList extends ComponentBase
         }
         $reader->setCategoryId((int) $this->category?->id);
         $this->posts = $reader->read();
+
+        $this->page->title = $this->category->name;
         $this->page['activeCategory'] = $this->category;
     }
 
