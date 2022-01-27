@@ -6,3 +6,4 @@
     - create_posts_table.php
     - create_post_tags_table.php
     - CategorySeeder.php
+    - PostTypeSeeder.php
