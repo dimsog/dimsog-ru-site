@@ -29,7 +29,7 @@
 
 <section class="post-tags">
     {% for postTag in post.tags %}
-        <a href="#" class="post-tag-item">
+        <a href="{{ 'tag-view' | page({ slug: postTag.tag.slug }) }}" class="post-tag-item">
             {{ postTag.tag.name }}
         </a>
     {% endfor %}
