@@ -26,3 +26,11 @@
         {{ post.text | raw }}
     </section>
 </article>
+
+<section class="post-tags">
+    {% for postTag in post.tags %}
+        <a href="#" class="post-tag-item">
+            {{ postTag.tag.name }}
+        </a>
+    {% endfor %}
+</section>
