@@ -73,4 +73,10 @@ class Tag extends Model
     public $morphMany = [];
     public $attachOne = [];
     public $attachMany = [];
+
+
+    public static function findBySlug(string $slug): ?Tag
+    {
+        return static::firstWhere('slug', $slug);
+    }
 }
