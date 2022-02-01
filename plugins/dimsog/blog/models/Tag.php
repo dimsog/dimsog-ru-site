@@ -1,6 +1,7 @@
 <?php namespace Dimsog\Blog\Models;
 
 use Model;
+use Winter\Storm\Database\Traits\Sluggable;
 
 /**
  * Tag Model
@@ -8,11 +9,16 @@ use Model;
 class Tag extends Model
 {
     use \Winter\Storm\Database\Traits\Validation;
+    use Sluggable;
 
     /**
      * @var string The database table used by the model.
      */
     public $table = 'dimsog_blog_tags';
+
+    public $slugs = [
+        'slug' => 'name'
+    ];
 
     /**
      * @var array Guarded fields
