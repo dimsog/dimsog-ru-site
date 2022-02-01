@@ -7,16 +7,7 @@
                     {{ post.name }}
                 </a>
             </h2>
-            <div class="post-summary">
-                <div class="post-summary__item">
-                    <a href="{{ 'category-view' | page({ slug: post.category.slug }) }}">
-                        {{ post.category.name }}
-                    </a>
-                </div>
-                <div class="post-summary__item">
-                    <i class="far fa-calendar-alt"></i> {{ post.created_at | date('d.m.Y') }}
-                </div>
-            </div>
+            {% partial '@post-summary' post = post fromList = true %}
         </header>
         {% if post.image is not empty %}
         <section class="post-item__image">

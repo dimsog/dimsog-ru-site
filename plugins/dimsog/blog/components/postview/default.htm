@@ -3,19 +3,7 @@
         <h1>
             {{ post.name }}
         </h1>
-        <div class="post-summary">
-            <div class="post-summary__item">
-                <a href="{{ 'category-view' | page({ slug: post.category.slug }) }}">
-                    {{ post.category.name }}
-                </a>
-            </div>
-            <div class="post-summary__item">
-                <i class="far fa-calendar-alt"></i> {{ post.created_at | date('d.m.Y') }}
-            </div>
-            <div class="post-summary__item">
-                <i class="fas fa-comment"></i> <span id="comments-count">{{ comments.countActiveCommentsFromCurrentPage() }}</span>
-            </div>
-        </div>
+        {% partial '@post-summary' %}
     </header>
     {% if post.image is not empty %}
     <section class="post-item__image">
