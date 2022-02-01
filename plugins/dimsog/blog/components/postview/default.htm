@@ -15,6 +15,7 @@
     </section>
 </article>
 
+{% if post.tags is not empty %}
 <section class="post-tags">
     {% for postTag in post.tags %}
         <a href="{{ 'tag-view' | page({ slug: postTag.tag.slug }) }}" class="post-tag-item">
@@ -22,3 +23,4 @@
         </a>
     {% endfor %}
 </section>
+{% endif %}
