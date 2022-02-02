@@ -1,8 +1,0 @@
-# ===================================
-#  Form Field Definitions
-# ===================================
-
-fields:
-    tag_id:
-        type: dropdown
-        label: Тег
