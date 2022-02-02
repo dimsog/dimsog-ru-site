@@ -17,7 +17,7 @@
     "highlight.js": "^11.4.0",
     "jquery": "^3.6.0",
     "mini-css-extract-plugin": "^2.3.0",
-    "node-sass": "^6.0.1",
+    "node-sass": "^7.0.1",
     "sass": "^1.43.4",
     "sass-loader": "^12.3.0",
     "webpack": "^5.64.2"

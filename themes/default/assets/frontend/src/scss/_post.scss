@@ -47,3 +47,23 @@
         }
     }
 }
+
+.post-view {
+    .post-item__image {
+        padding-bottom: 1rem;
+    }
+    .post-item__text {
+        padding: 0 0 15px 0;
+        p {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        .post-view__image {
+            margin-bottom: 1rem;
+            img {
+                max-width: 100%;
+                width: 100%;
+            }
+        }
+    }
+}
