@@ -8,3 +8,6 @@ form:
         site_name:
             label: Название сайта
             default: site.ru
+require:
+    - Dimsog.Comments
+    - Dimsog.Blog
