@@ -1,5 +1,0 @@
-fields:
-    moderate:
-        label: dimsog.comments::lang.settings.moderate
-        type: switch
-        default: false
