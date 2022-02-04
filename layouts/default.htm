@@ -21,6 +21,8 @@ description = "Default layout"
         <link href="{{ 'assets/frontend/dist/app.css' | theme }}" rel="stylesheet">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
         {% styles %}
+
+        {{ this.theme.header_seo_block | raw }}
     </head>
     <body>
         <header class="header">
@@ -48,5 +50,6 @@ description = "Default layout"
         {% framework extras %}
         {% scripts %}
 
+        {{ this.theme.footer_seo_block | raw }}
     </body>
 </html>

@@ -8,6 +8,10 @@ form:
         site_name:
             label: Название сайта
             default: site.ru
+        header_seo_block:
+            label: Header SEO block
+        footer_seo_block:
+            label: Footer SEO block
 require:
     - Dimsog.Comments
     - Dimsog.Blog
