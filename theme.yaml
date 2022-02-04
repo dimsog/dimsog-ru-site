@@ -10,8 +10,10 @@ form:
             default: site.ru
         header_seo_block:
             label: Header SEO block
+            type: textarea
         footer_seo_block:
             label: Footer SEO block
+            type: textarea
 require:
     - Dimsog.Comments
     - Dimsog.Blog
