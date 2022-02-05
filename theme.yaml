@@ -8,6 +8,9 @@ form:
         site_name:
             label: Название сайта
             default: site.ru
+        footer_html_block:
+            label: Footer HTML block
+            type: textarea
         header_seo_block:
             label: Header SEO block
             type: textarea
