@@ -63,12 +63,12 @@
             padding-left: 15px;
             padding-right: 15px;
         }
+        img {
+            max-width: 100%;
+            width: 100%;
+        }
         .post-view__image {
             margin-bottom: 1rem;
-            img {
-                max-width: 100%;
-                width: 100%;
-            }
         }
     }
 }
