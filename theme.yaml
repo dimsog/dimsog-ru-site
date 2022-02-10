@@ -17,6 +17,9 @@ form:
         footer_seo_block:
             label: Footer SEO block
             type: textarea
+        html_block_after_post_view:
+            label: Html block after post
+            type: textarea
 require:
     - Dimsog.Comments
     - Dimsog.Blog
