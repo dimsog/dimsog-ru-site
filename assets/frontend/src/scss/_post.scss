@@ -59,7 +59,13 @@
     }
     .post-item__text {
         padding: 0 0 15px 0;
-        p {
+        p,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
             padding-left: 15px;
             padding-right: 15px;
         }
