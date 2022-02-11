@@ -1,1 +1,1 @@
-Тема для сайта dimsog.ru
+A default theme for https://github.com/dimsog/wn-blog-plugin
