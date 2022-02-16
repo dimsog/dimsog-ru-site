@@ -1,29 +1,22 @@
 {
-    "name": "winter/demo-theme",
+    "name": "dimsog/wn-blog-theme",
     "type": "winter-theme",
-    "version": "1.0.1",
-    "description": "Demo Winter CMS theme",
-    "keywords": ["winter", "cms", "demo", "theme"],
+    "version": "1.0.2",
+    "description": "A simple blog theme",
+    "keywords": ["winter", "cms", "blog", "theme"],
     "license": "MIT",
+    "support": {
+        "issues": "https://github.com/dimsog/wn-blog-theme/issues",
+        "source": "https://github.com/dimsog/wn-blog-theme"
+    },
     "authors": [
         {
-            "name": "Alexey Bobkov",
-            "email": "aleksey.bobkov@gmail.com",
-            "role": "Co-founder"
-        },
-        {
-            "name": "Samuel Georges",
-            "email": "daftspunky@gmail.com",
-            "role": "Co-founder"
+            "name": "Dmitry R",
+            "email": "dimsog@gmail.com"
         }
     ],
     "require": {
-        "php": ">=5.4",
+        "php": ">=8.0",
         "composer/installers": "~1.0"
-    },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "1.0-dev"
-        }
     }
 }
