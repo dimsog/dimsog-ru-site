@@ -1,6 +1,7 @@
 {
     "name": "winter/demo-theme",
     "type": "winter-theme",
+    "version": "1.0.1",
     "description": "Demo Winter CMS theme",
     "keywords": ["winter", "cms", "demo", "theme"],
     "license": "MIT",
