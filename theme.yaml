@@ -8,6 +8,9 @@ form:
         site_name:
             label: Название сайта
             default: site.ru
+        site_description:
+            label: Description
+            default: Description for your blog
         header_image:
             label: Header image
             mode: image

@@ -49,6 +49,11 @@ description = "Default layout"
                         {{ this.theme.site_name }}
                     </a>
                 </div>
+                {% if this.theme.site_description is not empty %}
+                <div class="header__description">
+                    {{ this.theme.site_description }}
+                </div>
+                {% endif %}
                 <div class="header__categories">
                     {% component 'categoriesList' %}
                 </div>
