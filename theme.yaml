@@ -8,6 +8,14 @@ form:
         site_name:
             label: Название сайта
             default: site.ru
+        header_image:
+            label: Header image
+            mode: image
+            span: auto
+            type: fileupload
+            thumbOptions:
+                mode: crop
+                extension: auto
         footer_html_block:
             label: Footer HTML block
             type: textarea
