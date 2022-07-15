@@ -23,6 +23,10 @@ form:
             label: Logo color
             type: colorpicker
             default: "#fff"
+        description_color:
+            label: Description color
+            type: colorpicker
+            default: "#fff"
         menu_color:
             label: Menu color
             type: colorpicker
