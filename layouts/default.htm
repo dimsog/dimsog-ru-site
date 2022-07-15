@@ -20,16 +20,38 @@ description = "Default layout"
         {% styles %}
 
         {{ this.theme.header_seo_block | raw }}
+
+        <style>
+            .header .header__wrapper .header__logo .header-logo-link {
+                color: {{ this.theme.logo_color }};
+            }
+
+            .header .header__wrapper .categories .category-item {
+                color: {{ this.theme.menu_color }};
+            }
+
+            .header .header__wrapper .categories .category-item:hover {
+            color: {{ this.theme.menu_color_hover }};
+            }
+        </style>
     </head>
     <body>
-        <header class="header">
-            <div class="header__logo">
-                <a href="/" class="header-logo-link">
-                    {{ this.theme.site_name }}
-                </a>
-            </div>
-            <div class="header__categories">
-                {% component 'categoriesList' %}
+        <header class="header"
+                {% if this.theme.header_image is empty %}
+                style="background-image: url({{ 'assets/images/header-image.jpg' | theme }})"
+                {% else %}
+                style="background-image: url({{ this.theme.header_image.path  }})"
+                {% endif %}
+        >
+            <div class="header__wrapper">
+                <div class="header__logo">
+                    <a href="/" class="header-logo-link">
+                        {{ this.theme.site_name }}
+                    </a>
+                </div>
+                <div class="header__categories">
+                    {% component 'categoriesList' %}
+                </div>
             </div>
         </header>
 

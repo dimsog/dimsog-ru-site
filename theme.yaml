@@ -16,6 +16,18 @@ form:
             thumbOptions:
                 mode: crop
                 extension: auto
+        logo_color:
+            label: Logo color
+            type: colorpicker
+            default: "#fff"
+        menu_color:
+            label: Menu color
+            type: colorpicker
+            default: "#fff"
+        menu_color_hover:
+            label: Menu color (hover)
+            type: colorpicker
+            default: "#f8f8f8"
         footer_html_block:
             label: Footer HTML block
             type: textarea
