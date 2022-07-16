@@ -1,18 +1,18 @@
 name: Blog
-description: 'Простая тема для сайта с блогом на WinterCMS'
+description: A simple blog theme
 author: Dimsog
 homepage: 'https://dimsog.ru'
 code: ''
 form:
     fields:
         site_name:
-            label: Название сайта
+            label: themes.blog::lang.settings.site_name_label
             default: site.ru
         site_description:
-            label: Description
-            default: Description for your blog
+            label: themes.blog::lang.settings.site_description_label
+            default: themes.blog::lang.settings.site_description_default
         header_image:
-            label: Header image
+            label: themes.blog::lang.settings.header_image_label
             mode: image
             span: auto
             type: fileupload
@@ -20,32 +20,32 @@ form:
                 mode: crop
                 extension: auto
         logo_color:
-            label: Logo color
+            label: themes.blog::lang.settings.logo_color_label
             type: colorpicker
             default: "#fff"
         description_color:
-            label: Description color
+            label: themes.blog::lang.settings.description_color_label
             type: colorpicker
             default: "#fff"
         menu_color:
-            label: Menu color
+            label: themes.blog::lang.settings.menu_color_label
             type: colorpicker
             default: "#fff"
         menu_color_hover:
-            label: Menu color (hover)
+            label: themes.blog::lang.settings.menu_color_hover_label
             type: colorpicker
             default: "#f8f8f8"
         footer_html_block:
-            label: Footer HTML block
+            label: themes.blog::lang.settings.footer_html_block_label
             type: textarea
         header_seo_block:
-            label: Header SEO block
+            label: themes.blog::lang.settings.header_seo_block_label
             type: textarea
         footer_seo_block:
-            label: Footer SEO block
+            label: themes.blog::lang.settings.footer_seo_block_label
             type: textarea
         html_block_after_post_view:
-            label: Html block after post
+            label: themes.blog::lang.settings.html_block_after_post_view_label
             type: textarea
 require:
     - Dimsog.Comments
