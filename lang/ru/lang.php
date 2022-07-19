@@ -4,7 +4,6 @@ return [
     'settings' => [
         'site_name_label' => 'Название сайта',
         'site_description_label' => 'Описание',
-        'site_description_default' => 'Описание вашего блога',
         'header_image_label' => 'Изображение в шапке сайта',
         'logo_color_label' => 'Цвет логотипа',
         'description_color_label' => 'Цвет описания',

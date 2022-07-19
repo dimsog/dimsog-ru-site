@@ -10,7 +10,7 @@ form:
             default: site.ru
         site_description:
             label: themes.blog::lang.settings.site_description_label
-            default: themes.blog::lang.settings.site_description_default
+            default: 'Description for your blog'
         header_image:
             label: themes.blog::lang.settings.header_image_label
             mode: image

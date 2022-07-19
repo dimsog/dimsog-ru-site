@@ -4,7 +4,6 @@ return [
     'settings' => [
         'site_name_label' => 'Site name',
         'site_description_label' => 'Description',
-        'site_description_default' => 'Description for your blog',
         'header_image_label' => 'Header image',
         'logo_color_label' => 'Logo color',
         'description_color_label' => 'Description color',
