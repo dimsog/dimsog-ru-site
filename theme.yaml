@@ -7,7 +7,7 @@ form:
     fields:
         site_name:
             label: themes.blog::lang.settings.site_name_label
-            default: site.ru
+            default: Blog
         site_description:
             label: themes.blog::lang.settings.site_description_label
             default: 'Description for your blog'
