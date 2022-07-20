@@ -35,6 +35,10 @@ form:
             label: themes.blog::lang.settings.menu_color_hover_label
             type: colorpicker
             default: "#f8f8f8"
+        menu_color_active:
+            label: themes.blog::lang.settings.menu_color_active_label
+            type: colorpicker
+            default: "#fff"
         footer_html_block:
             label: themes.blog::lang.settings.footer_html_block_label
             type: textarea
