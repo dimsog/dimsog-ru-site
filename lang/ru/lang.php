@@ -9,7 +9,7 @@ return [
         'description_color_label' => 'Цвет описания',
         'menu_color_label' => 'Цвет пунктов меню',
         'menu_color_hover_label' => 'Цвет пунктов меню при наведении',
-        'menu_color_active' => 'Цвет выбранного пункта меню',
+        'menu_color_active_label' => 'Цвет выбранного пункта меню',
         'footer_html_block_label' => 'HTML блок в футере',
         'header_seo_block_label' => 'SEO блок в шапке',
         'footer_seo_block_label' => 'SEO блок в футере',

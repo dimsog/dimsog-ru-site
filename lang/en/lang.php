@@ -9,7 +9,7 @@ return [
         'description_color_label' => 'Description color',
         'menu_color_label' => 'Menu color',
         'menu_color_hover_label' => 'Menu color (hover)',
-        'menu_color_active' => 'Menu color (active)',
+        'menu_color_active_label' => 'Menu color (active)',
         'footer_html_block_label' => 'Footer HTML block',
         'header_seo_block_label' => 'Header SEO block',
         'footer_seo_block_label' => 'Footer SEO block',
