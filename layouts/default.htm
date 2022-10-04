@@ -48,7 +48,7 @@ description = "Default layout"
                 {% if this.theme.header_image is empty %}
                 style="background-image: url({{ 'assets/images/header-image.jpg' | theme }})"
                 {% else %}
-                style="background-image: url({{ this.theme.header_image.path  }})"
+                style="background-image: url({{ this.theme.header_image | media  }})"
                 {% endif %}
         >
             <div class="header__wrapper">

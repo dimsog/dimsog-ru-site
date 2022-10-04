@@ -13,12 +13,9 @@ form:
             default: 'Description for your blog'
         header_image:
             label: themes.blog::lang.settings.header_image_label
-            mode: image
             span: auto
-            type: fileupload
-            thumbOptions:
-                mode: crop
-                extension: auto
+            type: mediafinder
+            mode: image
         logo_color:
             label: themes.blog::lang.settings.logo_color_label
             type: colorpicker
