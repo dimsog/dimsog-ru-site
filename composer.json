@@ -1,7 +1,6 @@
 {
     "name": "dimsog/wn-blog-theme",
     "type": "winter-theme",
-    "version": "1.0.2",
     "description": "A simple blog theme",
     "keywords": ["winter", "cms", "blog", "theme"],
     "license": "MIT",
