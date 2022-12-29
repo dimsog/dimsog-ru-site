@@ -39,6 +39,21 @@
     .post-item__text {
         padding: 15px;
     }
+    .post-item-blocks {
+        .post-item-blocks__text {
+            padding: 0 15px 0 15px;
+            p {
+                margin-bottom: 10px;
+            }
+        }
+        .post-item-blocks__code {
+            pre {
+                code.hljs {
+                    padding: 15px;
+                }
+            }
+        }
+    }
 }
 
 .post-tags {
@@ -60,25 +75,5 @@
 .post-view {
     .post-item__image {
         padding-bottom: 1rem;
-    }
-    .post-item__text {
-        padding: 0 0 15px 0;
-        p,
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-            padding-left: 15px;
-            padding-right: 15px;
-        }
-        img {
-            max-width: 100%;
-            width: 100%;
-        }
-        .post-view__image {
-            margin-bottom: 1rem;
-        }
     }
 }
