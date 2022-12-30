@@ -6,7 +6,17 @@ description = "Default layout"
 <html>
     <head>
         <meta charset="utf-8">
-        <title>{{ this.page.title }}</title>
+        <title>
+            {% if this.page.id == 'home' %}
+                {{ this.page.blog_meta_title }}
+            {% else %}
+                {% if this.page.meta_title is not empty %}
+                    {{ this.page.meta_title }}
+                {% else %}
+                    {{ this.page.title }}
+                {% endif %}
+            {% endif %}
+        </title>
         <meta name="description" content="{{ this.page.meta_description }}">
         <meta name="title" content="{{ this.page.meta_title }}">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,47 +29,47 @@ description = "Default layout"
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
         {% styles %}
 
-        {{ this.theme.header_seo_block | raw }}
+        {{ this.page.blog_header_seo_block | raw }}
 
         <style>
             .header .header__wrapper .header__logo .header-logo-link {
-                color: {{ this.theme.logo_color }};
+                color: {{ this.page.blog_name_color }};
             }
 
             .header .header__wrapper .header__description {
-                color: {{ this.theme.description_color }};
+                color: {{ this.page.blog_description_color }};
             }
 
             .header .header__wrapper .categories .category-item {
-                color: {{ this.theme.menu_color }};
+                color: {{ this.page.blog_menu_color }};
             }
 
             .header .header__wrapper .categories .category-item:hover {
-            color: {{ this.theme.menu_color_hover }};
+            color: {{ this.page.blog_menu_color_hover }};
             }
 
             .header .header__wrapper .categories .category-item--active {
-                color: {{ this.theme.menu_color_active }};
+                color: {{ this.page.blog_menu_color_active }};
             }
         </style>
     </head>
     <body>
         <header class="header"
-                {% if this.theme.header_image is empty %}
+                {% if this.page.blog_poster is empty %}
                 style="background-image: url({{ 'assets/images/header-image.jpg' | theme }})"
                 {% else %}
-                style="background-image: url({{ this.theme.header_image | media  }})"
+                style="background-image: url({{ this.page.blog_poster.path }})"
                 {% endif %}
         >
             <div class="header__wrapper">
                 <div class="header__logo">
                     <a href="/" class="header-logo-link">
-                        {{ this.theme.site_name }}
+                        {{ this.page.blog_name }}
                     </a>
                 </div>
-                {% if this.theme.site_description is not empty %}
+                {% if this.page.blog_description is not empty %}
                 <div class="header__description">
-                    {{ this.theme.site_description }}
+                    {{ this.page.blog_description }}
                 </div>
                 {% endif %}
                 <div class="header__categories">
@@ -76,14 +86,12 @@ description = "Default layout"
             </div>
         </section>
 
-        {{ this.theme.footer_html_block }}
-
         <!-- Scripts -->
         <script src="{{ 'assets/frontend/dist/app.js' | theme }}"></script>
 
         {% framework extras %}
         {% scripts %}
 
-        {{ this.theme.footer_seo_block | raw }}
+        {{ this.page.footer_seo_block | raw }}
     </body>
 </html>
