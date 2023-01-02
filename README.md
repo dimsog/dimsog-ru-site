@@ -7,3 +7,8 @@ Please check: https://www.php.net/supported-versions.php
 * PHP 8.0
 * PHP 8.1
 * PHP 8.2
+
+### Installation
+```bash
+composer require dimsog/wn-blog-theme
+```
