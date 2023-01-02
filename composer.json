@@ -1,7 +1,7 @@
 {
     "name": "dimsog/wn-blog-theme",
     "type": "winter-theme",
-    "description": "A default blog theme fro dimsog/wn-blog-plugin",
+    "description": "The default blog theme for dimsog/wn-blog-plugin",
     "keywords": ["winter", "cms", "blog", "theme"],
     "license": "MIT",
     "support": {
