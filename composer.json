@@ -1,7 +1,7 @@
 {
     "name": "dimsog/wn-blog-theme",
     "type": "winter-theme",
-    "description": "A default blog theme fro dimsog/wn-blog-plugin",
+    "description": "The default blog theme for dimsog/wn-blog-plugin",
     "keywords": ["winter", "cms", "blog", "theme"],
     "license": "MIT",
     "support": {
@@ -16,6 +16,8 @@
     ],
     "require": {
         "php": ">=8.0",
-        "composer/installers": "~1.0"
+        "composer/installers": "~1.0",
+        "dimsog/wn-comments-plugin": "^1.1",
+        "dimsog/wn-blog-plugin": "^1.0"
     }
 }

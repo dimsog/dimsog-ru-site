@@ -52,6 +52,8 @@ description = "Default layout"
                 color: {{ this.page.blog_menu_color_active }};
             }
         </style>
+
+        {% placeholder header %}
     </head>
     <body>
         <header class="header"
@@ -93,5 +95,7 @@ description = "Default layout"
         {% scripts %}
 
         {{ this.page.footer_seo_block | raw }}
+
+        {% placeholder footer %}
     </body>
 </html>
